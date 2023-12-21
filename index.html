@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <section class="web_descr">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>        
+      </section>
+      <section class="web_form">
+        <p class="web_form_trial_descr">Try it free 7 days then <span>$20/mo. thereafter</span></p>
+
+        <form action="">
+
+          <div class="input_field" id="fn_field">
+            <input type="text" name="" id="fn_input-el" placeholder="First Name" required>
+            <img src="images/icon-error.svg" alt="" id="fn_icon-el" class="hidden">
+          </div>
+          <p class="error_message" id="fn_error-el"></p>
+
+          <div class="input_field" id="ln_field">
+            <input type="text" name="" id="ln_input-el" placeholder="Last Name" required>
+            <img src="images/icon-error.svg" alt="" id="ln_icon-el" class="hidden">
+          </div>
+          <p class="error_message" id="ln_error-el"></p>
+
+          <div class="input_field" id="em_field">
+            <input type="email" name="" id="em_input-el" placeholder="Email" required>
+            <img src="images/icon-error.svg" alt="" id="em_icon-el" class="hidden">
+          </div>
+          <p class="error_message" id="em_error-el"></p>
+
+          <div class="input_field" id="p_field">
+            <input type="password" name="" id="p_input-el" placeholder="Password" required>
+            <img src="images/icon-error.svg" alt="" id="p_icon-el" class="hidden">
+          </div>
+          <p class="error_message" id="p_error-el"></p>
+
+          <button id="btn-submit">Claim your free trial</button> 
+          <p class="web_form_t_and_c">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kyle Cloete</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

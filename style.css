@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-mobile.png);
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    margin-left: 1rem;
+}
+
+article{
+    margin: 1.5rem;
+
+}
+.web_descr{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 5rem;
+}
+h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+.web_form_trial_descr{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 0.5rem hsla(249, 10%, 26%, 0.5);
+}
+.web_form_trial_descr span{
+    font-weight: 400;
+}
+form{
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem hsla(249, 10%, 26%, 0.5);
+}
+.input_field{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 2rem;
+    border: 1px hsl(246, 25%, 77%) solid;
+    border-radius: 0.25rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}.input_field:first-of-type{
+    margin-top: 0;
+}
+.input_field:focus, .input_field:hover{
+    border-color: hsl(249, 10%, 26%);
+}
+input{
+    min-width: 25px;
+    flex: auto;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+    border: none;
+    outline: none;
+}
+button{
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 1rem 2rem;
+    background-color: hsl(154, 59%, 51%);
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0.25rem hsl(154, 59%, 35%);
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.web_form_t_and_c{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(246, 25%, 77%);
+    font-size: 0.65rem;
+}.web_form_t_and_c span {
+    color: hsl(0, 100%, 74%);
+}
+.hidden{
+    display: none;
+}
+.error_message{
+    margin-top: 0.25rem;
+    text-align: right;
+    font-weight: 400;
+    color: hsl(0, 100%, 74%);
+    font-size: 0.65rem;
+}
+.error_field{
+    border-color: hsl(0, 100%, 74%);
+}
+
+@media screen and (min-width: 750px) {
+    body{
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    article{
+        display: flex;
+        max-width: 69.685rem;
+        gap: 2rem;
+    }
+    .web_descr{
+        text-align: left;
+    }
+    section{
+        width: 50%;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+    }
+}
